@@ -1,20 +1,28 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
+import Home from '@/views/Home'
+import Flexbox from '@/views/Flexbox'
+import Grid from '@/views/Grid'
 
 Vue.use(Router)
 
 export default new Router({
   routes: [
+
     {
       path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld
+      name: 'Home',
+      component: Home
     },
     {
-      path: '/',
-      name: 'GridLayout',
-      component: HelloWorld
+      path: '/flexbox',
+      name: 'Flexbox',
+      component: Flexbox
+    },
+    {
+      path: '/grid',
+      name: 'Grid',
+      component: Grid
     }
   ]
 })
