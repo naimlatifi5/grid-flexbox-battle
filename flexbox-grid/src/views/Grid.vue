@@ -65,9 +65,6 @@ export default {
       &--1 {
         background-color: aqua;
         // position items
-        grid-row-start: 2;
-        grid-row-end: 2;
-        grid-column-start: 3;
       }
 
       &--2 {
@@ -76,6 +73,9 @@ export default {
 
       &--3 {
         background-color:brown;
+        //grid-column: 1 / 3;
+       // grid-row: 2/3;
+
       }
 
       &--4 {
