@@ -47,15 +47,74 @@
  $slider: #1364F6;
  $footer: #C4BA38;
 
+// Method 1 with number columns
+// .grid {
+//   display: grid;
+//   max-width: 900px;
+//   margin: 0 auto;
+//   border: 1px solid grey;
+//   color: white;
+//   grid-template-rows: 100px 130px 300px 100px 250px;
+//   grid-template-columns: repeat(3, 1fr) 200px;
+//   grid-gap: 30px;
+
+//   &__header {
+//     background-color: $header;
+//     // we can use span or -1 to cover the whole column width
+//     grid-column: 1 / span 4;
+//     //grid-column: 1 / -1;
+//   }
+
+//   &__box1 {
+//     background-color: $box1;
+//   }
+
+//   &__box2 {
+//     background-color: $box2;
+//   }
+
+//   &__box3 {
+//     background-color: $box3;
+//   }
+//   &__sidebar {
+//     background-color: $sidebar;
+//     grid-column: 4 / 5;
+//     grid-row: 2 / 5
+//   }
+
+//   &__content {
+//     background-color: $content;
+//     grid-column: 1 / 4
+//   }
+
+//   &__slider {
+//    background-color: $slider;
+//    grid-column: 1 / 4;
+//  }
+//   &__footer {
+//    background-color: $footer;
+//    grid-column: 1 / -1
+//  }
+
+// }
+
+// Method 2 with names lanes
 .grid {
   display: grid;
   max-width: 900px;
   margin: 0 auto;
   border: 1px solid grey;
   color: white;
+  grid-template-rows: [header-start] 100px [header-end box-start] 130px [box-end content-start] 300px [content-end slider-start] 100px [sidebar-end footer-start] 250px [footer-end];
+  // we repeat 3 column to take the size and the rest 1rf end of grid with 200px
+  grid-template-columns: repeat(3, [col-start] 1fr [col-end]) 200px [grid-end];
+  grid-gap: 30px;
 
   &__header {
     background-color: $header;
+    // we can use span or -1 to cover the whole column width
+    grid-column: col-start  / grid-end;
+    //grid-column: 1 / -1;
   }
 
   &__box1 {
@@ -71,19 +130,24 @@
   }
   &__sidebar {
     background-color: $sidebar;
+    grid-column: col-end 3 / grid-end;
+    grid-row: box-start / footer-start
   }
 
   &__content {
     background-color: $content;
+    grid-column: col-start 1 / col-end 3
   }
 
   &__slider {
    background-color: $slider;
+   grid-column: col-start 1 / col-end 3;
  }
   &__footer {
    background-color: $footer;
- }
+   grid-column: col-start 1 / grid-end
 
+ }
 }
 
 </style>
