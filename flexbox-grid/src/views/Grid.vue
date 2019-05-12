@@ -174,6 +174,18 @@
   </div>
 </div>
 
+<h3>Grid lanes with the same names</h3>
+<div class="bg-container">
+  <div class="grid14">
+   <div class="box-color box-color--1 item1">Grid lanes with same names</div>
+    <div class="box-color box-color--2 item2">2</div>
+    <div class="box-color box-color--3 item3">3</div>
+    <div class="box-color box-color--4 item4">4</div>
+    <div class="box-color box-color--5 item5">5</div>
+    <div class="box-color box-color--6 item6">6</div>
+  </div>
+</div>
+
 </div>
 </template>
 
@@ -192,8 +204,7 @@ export default {
    grid-template-columns: 100px 100px 100px;
    // row height
    grid-template-rows:100px 100px 100px;
-   max-width: 900px;
-   margin: 0 auto;
+   width: 100%;
 
    .item1 {
       //grid-column-start: 1;
@@ -296,6 +307,7 @@ export default {
       background-color: #fff;
       max-width: 500px;
       margin: 0 auto;
+      width: 100%;
   }
   .grid2 {
     //display: grid;
@@ -407,6 +419,18 @@ export default {
       grid-column-end: col-4-end;
 
     }
+  }
+
+  .grid14 {
+    display: grid;
+    grid-template-rows: repeat(3, [row-start] 1fr [row-end]); // lines are assingned with lines position number row-start row-start 2 row-start 3
+    grid-template-columns:repeat(3, [col-start] 1fr [col-end]); // col-start , col-start 2 col-start 3
+
+    .item1 {
+      grid-row: row-start 2 /row-end 3;
+      grid-column: col-start / col-start 3; // numbers should have space between
+    }
+
   }
 
   .box-color {

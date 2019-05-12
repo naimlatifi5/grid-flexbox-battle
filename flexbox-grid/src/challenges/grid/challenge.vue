@@ -1,6 +1,7 @@
 <template>
+
   <div>
-    <h2>Your challenge</h2>
+    <h2>Your challenge check link for challenge https://hackernoon.com/the-ultimate-css-battle-grid-vs-flexbox-d40da0449faf </h2>
     <p>With use of grid create the layout as in image below</p>
     <img src="./grid-challenge.png" width="450" height="350"/>
     <hr>

@@ -1,5 +1,5 @@
 <template>
-  <div>Welcome to Flexbox and CSS grid</div>
+  <h1>Welcome to Grid and flexbox course </h1>
 </template>
 
 <script>

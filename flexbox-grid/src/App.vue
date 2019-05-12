@@ -1,8 +1,10 @@
 <template>
   <div id="app">
      <router-link to="/">Home</router-link> |
-      <router-link to="/Flexbox">Flexbox</router-link> |
-      <router-link to="/Grid">Grid</router-link>
+      <router-link to="/Grid">Grid</router-link> |
+      <router-link to="/CssLayouts">CSS old aproach vs Grid</router-link> |
+      <router-link to="/Flexbox">Flexbox</router-link>
+
     <router-view/>
   </div>
 </template>
