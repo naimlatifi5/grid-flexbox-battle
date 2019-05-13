@@ -81,7 +81,6 @@ main {
   // we do not need to define the main and aside width
   .grid-container {
     display: grid;
-    grid-template-columns: 40% 60%;
-    grid-column-gap: 1px;
+
   }
 </style>
