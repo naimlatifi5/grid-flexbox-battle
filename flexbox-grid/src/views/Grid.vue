@@ -232,18 +232,8 @@ export default {
       margin: 0 auto;
       // turning an element to grid container
       display: grid;
-      // the two rows are 150px and 150px
-
-      //grid-template-rows: 150px 150px;
-      //grid-template-columns: 150px 150px 150px;
-
-      // if you do not need to specify within px every column we can use repeat
-      //grid-template-rows: repeat(2, 150px);
-      //grid-template-columns: repeat(3, 150px);
-
-      // we can use fr fraction unit like with flex-shring for filling the content on avaiable space
-
       grid-template-rows: repeat(2, 150px);
+      grid-template-columns: repeat(3, 1fr);
       //grid-template-columns: 1fr 2fr 1fr;
 
       // we can also use percentage for box column width
@@ -251,8 +241,8 @@ export default {
       // grid-template-columns: 50% 1fr 1fr;
 
       // we can use repeat together with fraction unit
-      grid-template-columns: repeat(3, 2fr);
-      // setting the gap between the rows and columns
+
+      // setting the gap between the rows and columns¨
       grid-row-gap: 30px;
       grid-column-gap: 30px;
 
