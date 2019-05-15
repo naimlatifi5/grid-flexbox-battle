@@ -27,7 +27,8 @@ export default {
   margin-top: 60px;
 }
 img {
-  width: 100%;
+  //width: 100%;
+  width: 600px;
 }
 .box-color {
 

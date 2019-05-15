@@ -1,6 +1,5 @@
 <template>
   <div class="challenge1">
-    <h1>welcome to challenge1</h1>
     <img src="./challenge1.png" alt="challenge1"/>
     <div class="bg-container">
       <div class="grid-container">
