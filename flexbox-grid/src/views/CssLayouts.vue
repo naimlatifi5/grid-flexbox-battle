@@ -43,7 +43,6 @@ main {
 
 .bg-container {
       position: relative;
-      min-height: 30em;
       color: black;
       border: .5rem solid #f7f7f9;
       border-radius: .2rem;
@@ -81,6 +80,8 @@ main {
   // we do not need to define the main and aside width
   .grid-container {
     display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
 
   }
 </style>
