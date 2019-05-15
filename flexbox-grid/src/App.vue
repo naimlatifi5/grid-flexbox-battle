@@ -3,8 +3,8 @@
      <router-link to="/">Home</router-link> |
       <router-link to="/Grid">Grid</router-link> |
       <router-link to="/CssLayouts">CSS old aproach vs Grid</router-link> |
-      <router-link to="/challenge1">Challenge#1</router-link> |
-      <router-link to="/challenge2">Challenge#2</router-link> |
+      <router-link to="/challenge1">Grid-Challenge#1</router-link> |
+      <router-link to="/challenge2">Grid-Challenge#2</router-link> |
       <router-link to="/Flexbox">Flexbox</router-link>
 
     <router-view/>
@@ -26,7 +26,9 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
-
+img {
+  width: 100%;
+}
 .box-color {
 
       color: white;
@@ -59,6 +61,16 @@ export default {
 
       &--6 {
         background-color:olivedrab;
+      }
+
+      &--7 {
+        background-color: fuchsia;
+      }
+      &--8 {
+        background-color: goldenrod;
+      }
+      &--9 {
+        background-color: cornflowerblue;
       }
     }
 </style>

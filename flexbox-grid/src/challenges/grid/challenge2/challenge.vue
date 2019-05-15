@@ -1,12 +1,18 @@
 <template>
   <div class="challenge1">
-    <h1>welcome to challenge1</h1>
+    <h1>welcome to challenge2</h1>
+    <img src="./challenge2.png" alt="challenge2" />
     <div class="bg-container">
       <div class="grid-container">
-      <div class="box-color box-color--1 item1">A</div>
-      <div class="box-color box-color--2 item1">B</div>
-      <div class="box-color box-color--3 item1">C</div>
-      <div class="box-color box-color--4 item1">D</div>
+      <div class="box-color box-color--1 item1">1</div>
+      <div class="box-color box-color--2 item2">2</div>
+      <div class="box-color box-color--3 item3">3</div>
+      <div class="box-color box-color--4 item4">4</div>
+      <div class="box-color box-color--5 item5">5</div>
+      <div class="box-color box-color--6 item6">6</div>
+      <div class="box-color box-color--7 item7">7</div>
+      <div class="box-color box-color--8 item8">8</div>
+      <div class="box-color box-color--9 item9">9</div>
       </div>
     </div>
   </div>
@@ -24,4 +30,5 @@
       margin: 0 auto;
       width: 100%;
   }
+
 </style>

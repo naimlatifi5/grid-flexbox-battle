@@ -391,7 +391,7 @@ export default {
     grid-template-columns: 100px 100px 1fr;
 
     .item1 {
-      grid-row: 1 / span5;
+      grid-row: 1 / span 5;
       grid-column: 1 / span 2;
     }
   }
