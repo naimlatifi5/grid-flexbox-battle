@@ -15,17 +15,6 @@
 </template>
 
 <style lang="scss" scoped>
-  .bg-container {
-      position: relative;
-      min-height: 18rem;
-      color: #f0f0f3;
-      border: .5rem solid #f7f7f9;
-      border-radius: .2rem;
-      background-color: #fff;
-      max-width: 500px;
-      margin: 0 auto;
-      width: 100%;
-  }
 
   // challenge1
 .grid-container {
