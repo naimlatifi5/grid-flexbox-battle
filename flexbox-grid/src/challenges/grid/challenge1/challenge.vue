@@ -27,4 +27,12 @@
       width: 100%;
   }
 
+  // challenge1
+.grid-container {
+  display: grid;
+  grid-template-rows:100px 100px;
+  grid-template-columns: 100px 100px 100px;
+  grid-gap: 10px;
+}
+
 </style>
