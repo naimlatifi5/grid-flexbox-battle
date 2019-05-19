@@ -34,7 +34,7 @@ img {
   .bg-container {
       position: relative;
       min-height: 18rem;
-      color: #f0f0f3;
+      color: #5d5d5d;
       border: .5rem solid #f7f7f9;
       border-radius: .2rem;
       background-color: #fff;
