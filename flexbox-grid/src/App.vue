@@ -5,8 +5,9 @@
       <router-link to="/CssLayouts">CSS old aproach vs Grid</router-link> |
       <router-link to="/challenge1">Grid-Challenge#1</router-link> |
       <router-link to="/challenge2">Grid-Challenge#2</router-link> |
-      <router-link to="/Flexbox">Flexbox</router-link>
-
+      <router-link to="/Flexbox">Flexbox</router-link> |
+      <router-link to="/flexbox-challenge1">Flexbox-Challenge1</router-link> |
+      <router-link to="/flexbox-challenge2">Flexbox-Challenge2</router-link>
     <router-view/>
   </div>
 </template>
@@ -87,4 +88,32 @@ img {
         background-color: cornflowerblue;
       }
     }
+
+    .button {
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    border-radius: 4px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    &.button-primary {
+      color: #fff;
+      background-color: #337ab7;
+      border-color: #2e6da4;
+    }
+}
 </style>

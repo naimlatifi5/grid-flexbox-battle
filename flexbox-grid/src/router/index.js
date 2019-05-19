@@ -7,6 +7,8 @@ import CssLayouts from '@/views/CssLayouts'
 import GridChallenge from '@/challenges/grid/main/challenge'
 import Challenge1 from '@/challenges/grid/challenge1/challenge'
 import Challenge2 from '@/challenges/grid/challenge2/challenge'
+import FlexboxChallenge1 from '@/challenges/flexbox/challenge1/challenge'
+import FlexboxChallenge2 from '@/challenges/flexbox/challenge2/challenge'
 
 Vue.use(Router)
 
@@ -47,6 +49,16 @@ export default new Router({
       path: '/challenge2',
       name: 'challenge2',
       component: Challenge2
+    },
+    {
+      path: '/flexbox-challenge1',
+      name: 'flexbox-challenge1',
+      component: FlexboxChallenge1
+    },
+    {
+      path: '/flexbox-challenge2',
+      name: 'flexbox-challenge2',
+      component: FlexboxChallenge2
     }
   ]
 })
