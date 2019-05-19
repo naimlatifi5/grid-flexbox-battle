@@ -186,14 +186,23 @@
   </div>
 </div>
 
+<h3>Nested grid</h3>
+
+<div class="bg-container">
+  <div class="grid15">
+   <div class="box-color box-color--1 item1">1</div>
+    <div class="box-color box-color--2 item2">2</div>
+    <div class="box-color box-color--3 item3">3</div>
+    <div class="box-color box-color--4 item4">
+      <div class="box-color box-color--5 item5">5</div>
+      <div class="box-color box-color--6 item6">6</div>
+      <div class="box-color box-color--7 item7">7</div>
+    </div>
+  </div>
+</div>
+
 </div>
 </template>
-
-<script>
-export default {
-
-}
-</script>
 
 <style lang="scss">
 // turn the div into grid
@@ -421,6 +430,47 @@ export default {
       grid-column: col-start / col-start 3; // numbers should have space between
     }
 
+  }
+
+  .grid15 {
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns:repeat(4, [col-item] 22%);
+    grid-template-rows: repeat(2, [row-item] auto);
+
+    .item1 {
+      grid-column: col-item / span 2;
+      grid-row: row-item;
+    }
+    .item2 {
+      grid-column: col-item 3 /span 2;
+      grid-row: row-item;
+    }
+
+    .item3 {
+      grid-column: col-item  / span 2;
+      grid-row: row-item 2;
+    }
+    .item4 {
+      grid-column: col-item 3 / span 2;
+      grid-row: row-item 2;
+      // we initiate this column as a grid;
+      display: grid;
+
+    }
+
+    .item5 {
+      grid-column: 1 / 3;
+      grid-row: 1;
+    }
+    .item6 {
+      grid-column: 1 / 2;
+      grid-row: 2;
+    }
+    .item7 {
+      grid-column: 2 / 2;
+      grid-row: 2;
+    }
   }
 
   .box-color {
