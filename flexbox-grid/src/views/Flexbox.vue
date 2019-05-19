@@ -223,7 +223,7 @@
         </div>
       </div>
 
-          <h3>Flex - a shorthand for flex-grow flex-basis and flex-shrink combined</h3>
+      <h3>Flex - a shorthand for flex-grow flex-basis and flex-shrink combined</h3>
       <div class="bg-container">
         <h4>flex: 1 0 100px </h4>
        <div class="flexbox-items5">
@@ -249,6 +249,17 @@
           <div class="box-color box-color--3 b" >C</div>
           <div class="box-color box-color--4 b" >D</div>
           <div class="box-color box-color--5 b" >E</div>
+        </div>
+      </div>
+
+     <h3>Align self</h3>
+      <div class="bg-container">
+       <div class="flexbox-items8">
+          <div class="box-color box-color--1 a item1">1</div>
+          <div class="box-color box-color--2 b item2" >2</div>
+          <div class="box-color box-color--3 c item3">3</div>
+          <div class="box-color box-color--4 d item4">4</div>
+          <div class="box-color box-color--4 d item5">5</div>
         </div>
       </div>
   </div>
@@ -487,6 +498,28 @@
     // this is great if we do not want to specify the element min and max width
     flex: 1 0 auto;
   }
+}
 
+.flexbox-items8 {
+  display: flex;
+  height: 500px;
+
+  .item1 {
+    // it is possible to override align-items value for specific flex item
+    align-self: flex-start;
+  }
+  .item2 {
+    align-self: center;
+  }
+  .item3 {
+    align-self: flex-end;
+  }
+
+  .item4 {
+    align-self: baseline;
+  }
+  .item5 {
+    align-self: stretch;
+  }
 }
 </style>
