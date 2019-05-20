@@ -9,6 +9,7 @@ import Challenge1 from '@/challenges/grid/challenge1/challenge'
 import Challenge2 from '@/challenges/grid/challenge2/challenge'
 import FlexboxChallenge1 from '@/challenges/flexbox/challenge1/challenge'
 import FlexboxChallenge2 from '@/challenges/flexbox/challenge2/challenge'
+import Main from '@/challenges/main/challenge'
 
 Vue.use(Router)
 
@@ -59,6 +60,11 @@ export default new Router({
       path: '/flexbox-challenge2',
       name: 'flexbox-challenge2',
       component: FlexboxChallenge2
+    },
+    {
+      path: '/main',
+      name: 'main',
+      component: Main
     }
   ]
 })

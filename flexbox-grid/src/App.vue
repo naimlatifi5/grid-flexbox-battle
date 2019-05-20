@@ -7,7 +7,8 @@
       <router-link to="/challenge2">Grid-Challenge#2</router-link> |
       <router-link to="/Flexbox">Flexbox</router-link> |
       <router-link to="/flexbox-challenge1">Flexbox-Challenge1</router-link> |
-      <router-link to="/flexbox-challenge2">Flexbox-Challenge2</router-link>
+      <router-link to="/flexbox-challenge2">Flexbox-Challenge2</router-link> |
+      <router-link to="/main">Main challenge</router-link>
     <router-view/>
   </div>
 </template>
