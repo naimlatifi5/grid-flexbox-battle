@@ -1,7 +1,7 @@
 <template>
 
   <div>
-    <p>With use of grid create the layout as in image below</p>
+    <p>With use of grid and flexbox create the layout as in image below</p>
     <img src="./mainChallenge.png" width="450" height="550"/>
     <hr>
     <div class="grid-challenge">
@@ -58,14 +58,21 @@
  $footer: #C4BA38;
 
 .grid {
+  display: grid;
   max-width: 900px;
   margin: 0 auto;
   border: 1px solid grey;
   color: white;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 100px auto 300px 100px;
 
   &__header {
     background-color: $header;
-
+    grid-column: 1 / 5;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
   }
 
   img {
@@ -74,25 +81,32 @@
 
   &__boxes {
     background-color: $box2;
-
+    grid-column: 1 / 4
   }
 
   &__sidebar {
     background-color: $sidebar;
-
+    grid-column: 4 / 5;
+    grid-row: 2 / 4;
+    display: flex;
   }
 
   &__content {
     background-color: $content;
-
+    grid-column: 1 / 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   &__sidebar-main {
-
+    flex-basis: 100%;
+    align-self: center;
  }
   &__footer {
    background-color: $footer;
-
+   grid-column: 1 / -1;
+   display: flex;
  }
 
  &__footer-left,
@@ -100,24 +114,29 @@
    padding: 10px;
    background-color: $header;
    margin-right: 1px;
-
+   flex-grow: 2;
+   align-self: center;
  }
 
  .cards {
-
+  display: flex;
+  justify-content: space-evenly;
    img {
      max-width: 100%;
    }
   &__card {
-
-    margin: 10px;
+    flex: 0 0 46%;
+    margin: 10px 0 ;
     border: 1px solid #ebe7e7;
     box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.1);
-
+    flex-direction: column;
   }
 
   &__content {
     padding: 0 30px 30px 30px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
   }
  }
 }

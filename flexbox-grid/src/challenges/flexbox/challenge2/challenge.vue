@@ -83,17 +83,58 @@
 </template>
 
 <style lang="scss">
- .cards {
-     img {
-       max-width: 100%;
-     }
-    &__card {
-    border: 1px solid #ebe7e7;
-    box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.1);
-    }
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+   img {
+     max-width: 100%;
+   }
+  &__card {
+  flex: 0 0 300px;
+  margin: 10px;
+  border: 1px solid #ebe7e7;
+  box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.1);
+  }
 
-    &__content {
-      padding: 0 30px 30px 30px;
-    }
- }
+  &__content {
+    padding: 0 30px 30px 30px;
+  }
+
+  &--1 {
+    order: 3;
+  }
+
+  &--2 {
+    order: 2
+
+  }
+
+  &--3 {
+    order: 5;
+
+  }
+
+  &--4 {
+    order: 1;
+  }
+
+  &--5 {
+    order: 4;
+  }
+
+  &--6 {
+    order: 7;
+  }
+
+  &--7 {
+    order: 6;
+  }
+
+   &--8 {
+    order: 8;
+  }
+
+}
+
 </style>

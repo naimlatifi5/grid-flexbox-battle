@@ -37,9 +37,9 @@ img {
       position: relative;
       min-height: 18rem;
       color: #5d5d5d;
-      border: .5rem solid #f7f7f9;
+      border: .5rem solid red;
       border-radius: .2rem;
-      background-color: #fff;
+      background-color: back;
       max-width: 500px;
       margin: 0 auto;
       width: 100%;

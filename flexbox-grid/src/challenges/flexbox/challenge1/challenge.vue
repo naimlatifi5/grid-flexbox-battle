@@ -11,7 +11,11 @@
 
 <style lang="scss">
 
-.flexbox-center {
+ .flexbox-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   padding: 50px;
 }
 
